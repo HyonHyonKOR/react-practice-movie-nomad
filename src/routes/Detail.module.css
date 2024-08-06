@@ -1,0 +1,31 @@
+.loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loadingCircle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: black;
+  animation: loadingAnime 0.5s infinite;
+}
+
+.h1 {
+  text-align: center;
+}
+.detail {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@keyframes loadingAnime {
+  from {
+    transform: scale(1.1);
+    background-color: red;
+  }
+  to {
+    background-color: green;
+  }
+}
